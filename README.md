@@ -17,7 +17,7 @@
 sudo apt install libpcap-dev
 
 # 2. сборка
-g++ -O2 -Wall -std=c++11 -o hndshk hndshk.cpp -lpcap
+g++ -O2 -Wall -std=c++11 -o hndshk handhshake/hndshk.cpp -lpcap
 
 # 3. адаптер в monitor mode
 sudo airmon-ng start wlan0
@@ -50,9 +50,10 @@ sudo ./hndshk wlan0mon handshake.pcap --once                 # стоп посл
 ```
 .
 ├── README.md
-├── hndshk.cpp
-└── assets/
-    └── hero.svg
+├── assets/
+│   └── hero.svg
+└── handhshake/
+    └── hndshk.cpp
 ```
 
 ## ⚠️ Дисклеймер
